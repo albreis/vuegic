@@ -261,33 +261,6 @@
                       ]
                     })
                   ]
-                : typeof _vm.tag[_vm.tagName] == "function"
-                ? [
-                    _vm._l(_vm.getTags(_vm.tag[_vm.tagName]), function(t, k) {
-                      var _obj;
-                      return [
-                        t && _vm.isValidTag(k, t)
-                          ? _c("CustomTag", {
-                              key: k,
-                              attrs: {
-                                tag:
-                                  ((_obj = {}),
-                                  (_obj[k] = _vm.parse(t, { parent: _vm.tag })),
-                                  _obj)
-                              }
-                            })
-                          : typeof t == "string"
-                          ? [_vm._v(_vm._s(_vm.parse(t, { tag: _vm.tag })))]
-                          : [
-                              _vm._v(
-                                _vm._s(
-                                  _vm.parse(t[_vm.getTag(t)], { tag: _vm.tag })
-                                )
-                              )
-                            ]
-                      ]
-                    })
-                  ]
                 : typeof _vm.tag[_vm.tagName] == "string"
                 ? [
                     _vm._v(
@@ -306,7 +279,7 @@
       /* style */
       var __vue_inject_styles__ = function (inject) {
         if (!inject) { return }
-        inject("data-v-380ee9da_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
+        inject("data-v-3e893ba7_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
 
       };
       /* scoped */
