@@ -14,6 +14,13 @@
                 <template v-else>{{parse(t[getTag(t)], {tag})}}</template>
             </template>
         </template>
+        <template v-else-if="typeof tag[tagName] == 'function'">
+            <template  v-for="(t, k) in getTags(tag[tagName])">
+                <CustomTag v-if="t && isValidTag(k, t)" :key="k" :tag="{[k]: parse(t, {parent: tag})}" />
+                <template v-else-if="typeof t == 'string'">{{parse(t, {tag})}}</template>
+                <template v-else>{{parse(t[getTag(t)], {tag})}}</template>
+            </template>
+        </template>
         <template v-else-if="typeof tag[tagName] == 'string'">{{parse(tag[tagName], {tag})}}</template>
         <template v-else>{{parse(tag, {tag})}}</template>
     </customTag2>
@@ -75,7 +82,6 @@ export default {
             return this.parse(config.attrs, {parent: this.tag})
         },
         getEvents(config) {
-            console.log(config)
             return this.parse(config.events, {parent: this.tag})
         }
     }

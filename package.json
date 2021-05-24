@@ -1,6 +1,6 @@
 {
   "name": "@ersolucoesweb/vuegic",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": false,
   "description": "Gerador de HTML a partir de um objeto",
   "author": "ER Soluções Web LTDA <contato@ersolucoesweb.com.br>",
