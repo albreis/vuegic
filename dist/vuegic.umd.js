@@ -10,6 +10,11 @@
         props: {
             tag: {}
         },
+        data: function data() {
+            return {
+                childs: []
+            }
+        },
         components: {
             CustomTag: __vue_component__,
             customTag2: {
@@ -25,24 +30,24 @@
         computed: {
             tagName: function tagName() {
                 return this.getTag(this.tag)
+            },
+            console: function console() {
+                return window.console
             }
         },
         methods: {
             checkIsArray: function checkIsArray(config){
                 return Array.isArray(config)
             },
-            isValidTag: function isValidTag(tag, config) {
-                if(Array.isArray(config[tag])) {
-                    return false
-                }
+            isValidTag: function isValidTag(tag) {
                 if(isNaN(tag) == false) {
                     return false
                 }
                 return document.createElement(tag).toString() != "[object HTMLUnknownElement]";
             },
-            parse: function parse(input, params) {
+            parse: function parse(input) {
                 if(typeof input == 'function') {
-                    return input(params)
+                    return input(this)
                 }
                 return input
             },
@@ -220,7 +225,7 @@
                         t && _vm.isValidTag(_vm.getTag(t), t)
                           ? _c("CustomTag", {
                               key: k,
-                              attrs: { tag: _vm.parse(t, { parent: _vm.tag }) }
+                              attrs: { tag: _vm.parse(t) }
                             })
                           : typeof t == "string"
                           ? [_vm._v(_vm._s(_vm.parse(t, { tag: _vm.tag })))]
@@ -243,14 +248,11 @@
                           ? _c("CustomTag", {
                               key: k,
                               attrs: {
-                                tag:
-                                  ((_obj = {}),
-                                  (_obj[k] = _vm.parse(t, { parent: _vm.tag })),
-                                  _obj)
+                                tag: ((_obj = {}), (_obj[k] = _vm.parse(t)), _obj)
                               }
                             })
                           : typeof t == "string"
-                          ? [_vm._v(_vm._s(_vm.parse(t, { tag: _vm.tag })))]
+                          ? [_vm._v(_vm._s(_vm.parse(t)))]
                           : [
                               _vm._v(
                                 _vm._s(
@@ -262,12 +264,8 @@
                     })
                   ]
                 : typeof _vm.tag[_vm.tagName] == "string"
-                ? [
-                    _vm._v(
-                      _vm._s(_vm.parse(_vm.tag[_vm.tagName], { tag: _vm.tag }))
-                    )
-                  ]
-                : [_vm._v(_vm._s(_vm.parse(_vm.tag, { tag: _vm.tag })))]
+                ? [_vm._v(_vm._s(_vm.parse(_vm.tag[_vm.tagName])))]
+                : [_vm._v(_vm._s(_vm.parse(_vm.tag)))]
             ],
             2
           )
@@ -279,7 +277,7 @@
       /* style */
       var __vue_inject_styles__ = function (inject) {
         if (!inject) { return }
-        inject("data-v-3e893ba7_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
+        inject("data-v-3ad3011c_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
 
       };
       /* scoped */
