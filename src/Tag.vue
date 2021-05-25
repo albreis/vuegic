@@ -74,13 +74,13 @@ export default {
             let conf = Object.assign({}, config)
             delete conf.attrs
             delete conf.events
-            return this.parse(conf, {parent: this.tag})
+            return this.parse(conf, this)
         },
         getAttrs(config) {
-            return this.parse(config.attrs, {parent: this.tag})
+            return this.parse(config.attrs, this)
         },
         getEvents(config) {
-            return this.parse(config.events, {parent: this.tag})
+            return this.parse(config.events, this)
         }
     }
 }

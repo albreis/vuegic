@@ -3,7 +3,7 @@
 </template>
 <script>
 /* eslint-disable */
-import Vuegic from '../src/Vuegic'
+import Vuegic from '@ersolucoesweb/vuegic'
 import axios from 'axios'
 export default {
     components: {
@@ -35,7 +35,7 @@ export default {
                                 ]
                             })
                         }
-                        component.tag.table.tbody = rows
+                        component.table.tbody = rows
                     }
                 }
             }

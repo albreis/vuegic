@@ -52,13 +52,13 @@ var script = {
             var conf = Object.assign({}, config);
             delete conf.attrs;
             delete conf.events;
-            return this.parse(conf, {parent: this.tag})
+            return this.parse(conf, this)
         },
         getAttrs: function getAttrs(config) {
-            return this.parse(config.attrs, {parent: this.tag})
+            return this.parse(config.attrs, this)
         },
         getEvents: function getEvents(config) {
-            return this.parse(config.events, {parent: this.tag})
+            return this.parse(config.events, this)
         }
     }
 };
@@ -271,7 +271,7 @@ __vue_render__._withStripped = true;
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-3ad3011c_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
+    inject("data-v-49f47198_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
 
   };
   /* scoped */
