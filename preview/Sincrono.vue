@@ -14,8 +14,13 @@ export default {
         return {
             doc: {
                 div: {
+                    style: `
+                        .img1{border:4px solid red;}
+                        .img2{border:4px solid blue;}
+                    `,
                     img: {
                         attrs: {
+                            class: 'img1',
                             src: '//via.placeholder.com/300x50'
                         }
                     },
@@ -26,15 +31,23 @@ export default {
                             imgs.push({
                                 img: {
                                     attrs: {
+                                        class: 'img2',
                                         src: '//via.placeholder.com/300x50'
                                     },
-                                    events: {
-                                        mouseenter(event) {
-                                            event.currentTarget.style.transform = 'scale(0.7)'
-                                        },
-                                        mouseleave(event) {
-                                            event.currentTarget.style.transform = 'scale(1)'
-                                        },
+                                    events: () => {
+                                        return {
+                                            mouseenter(event) {
+                                                event.currentTarget.style.transform = 'scale(1.1)'
+                                                event.currentTarget.style.position = 'relative'
+                                                event.currentTarget.style.zIndex = '9'
+                                                event.currentTarget.style.boxShadow = '0 0 10px rgba(0,0,0,0.2)'
+                                            },
+                                            mouseleave(event) {
+                                                event.currentTarget.style.transform = 'scale(1)'
+                                                event.currentTarget.style.zIndex = '1'
+                                                event.currentTarget.style.boxShadow = 'none'
+                                            }
+                                        }
                                     }
                                 }
                             })
