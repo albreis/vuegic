@@ -908,6 +908,20 @@
   resolved "https://registry.yarnpkg.com/@ersolucoesweb/vuegic/-/vuegic-2.2.0.tgz#7a990dffb07f0f23a4775096b2a6a2dad4802167"
   integrity sha512-5xYRiSkqHhz7nrVeKRumfKyziRRBkQ9ItjDAfPs4wPIxp4iCIR7hPb1mPx9U1UJLUn/RFmeXGU35C6IBDebFcA==
 
+"@ersolucoesweb/vuegic@^2.3.0":
+  version "2.3.0"
+  resolved "https://registry.yarnpkg.com/@ersolucoesweb/vuegic/-/vuegic-2.3.0.tgz#46582eee5b2aac79806b7ac10626812861f3d311"
+  integrity sha512-NrjZgTs/20dTWelmjn+Mnb9rjCya2GQ5lCcEmQiybGNxL0KYvuvZ5I1A7IMG/kjJcCssJ/Z6iNiDv+6M09jGkg==
+  dependencies:
+    "@ersolucoesweb/vuegic" "^2.2.0"
+
+"@ersolucoesweb/vuegic@^2.4.0":
+  version "2.4.0"
+  resolved "https://registry.yarnpkg.com/@ersolucoesweb/vuegic/-/vuegic-2.4.0.tgz#6a50ab7c076d499678356dde1736c97d89efaafe"
+  integrity sha512-nhW3hyRqrA/ZpkZsJQKuehSLPEvu5hXcIuAgIz9kMFKXKf2yhqnXJ5rI2y/MRHcJ24tyj0E8tYUI0YnD0XZcMw==
+  dependencies:
+    "@ersolucoesweb/vuegic" "^2.3.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.yarnpkg.com/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz#524af240d1a360527b730475ecfa1344aa540dde"

@@ -5,6 +5,9 @@ module.exports = {
     https: false,
     disableHostCheck: true
   },
+  chainWebpack: config => {
+    config.module.rules.delete('eslint');
+  },
   configureWebpack: {
     resolve: {
       // Add `.ts` as a resolvable extension.

@@ -23,8 +23,7 @@ export default {
                         ]
                     },
                     tbody: async (component) => {
-                        console.log(component)
-                        let res = await axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome')
+                        var res = await axios.get('https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome')
                         let rows = []
                         let i;
                         for(i in res.data) {
@@ -35,7 +34,7 @@ export default {
                                 ]
                             })
                         }
-                        component.table.tbody = rows
+                        component.tag.table.tbody = rows
                     }
                 }
             }
