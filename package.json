@@ -1,6 +1,6 @@
 {
   "name": "@ersolucoesweb/vuegic",
-  "version": "3.3.0",
+  "version": "3.4.0",
   "private": false,
   "description": "Gerador de HTML a partir de um objeto",
   "author": "ER Soluções Web LTDA <contato@ersolucoesweb.com.br>",
@@ -33,7 +33,7 @@
   },
   "unpkg": "dist/vuegic.min.js",
   "dependencies": {
-    "@ersolucoesweb/vuegic": "^3.3.0"
+    "@ersolucoesweb/vuegic": "^3.4.0"
   },
   "devDependencies": {
     "@rollup/plugin-buble": "^0.21.3",

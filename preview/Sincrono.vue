@@ -1,5 +1,5 @@
 <template>
-  <Vuegic :doc="doc" />
+    <Vuegic :doc="doc" />
 </template>
 <script>
 /* eslint-disable */
@@ -13,51 +13,33 @@ export default {
     data() {
         return {
             doc: {
-                table: {
-                    attrs: {
-                        width: '100%'
-                    },
-                    thead: {
-                        tr: [
-                            {td: {p: () => {return {i: [{b: () => 'asdasda'}]}}}},
-                            {td: 'Sigla'}
-                        ]
-                    },
-                    tbody: (component) => {
-                        var request = new XMLHttpRequest();
-                        request.open('GET', 'https://servicodados.ibge.gov.br/api/v1/localidades/estados?orderBy=nome', false);
-                        request.send(null);
-                        if (request.status === 200) {
-                            var res = JSON.parse(request.responseText);
+                div: {
+                    img: {
+                        attrs: {
+                            src: '//via.placeholder.com/300x50'
                         }
-                        let rows = []
-                        let i;
-                        for(i in res) {
-                            rows.push({
-                                tr: [
-                                    {
-                                        td: {
-                                            strong: {
-                                                text: `[${res[i].regiao.sigla}]`, 
-                                                attrs: {
-                                                    style: {
-                                                        width: '50px', 
-                                                        display: 'inline-block',
-                                                        color: '#000'
-                                                    }
-                                                }
-                                            }, 
-                                            text: res[i].nome, 
-                                            attrs: {
-                                                style: 'color:red'
-                                            }
-                                        }
-                                    }, 
-                                    {td: res[i].sigla}
-                                ]
+                    },
+                    header: (root) => {
+                        console.log(root)
+                        var imgs = []
+                        for(let i in [1,2,3,4,5]) {
+                            imgs.push({
+                                img: {
+                                    attrs: {
+                                        src: '//via.placeholder.com/300x50'
+                                    },
+                                    events: {
+                                        mouseenter(event) {
+                                            event.currentTarget.style.transform = 'scale(0.7)'
+                                        },
+                                        mouseleave(event) {
+                                            event.currentTarget.style.transform = 'scale(1)'
+                                        },
+                                    }
+                                }
                             })
                         }
-                        return rows
+                        return imgs
                     }
                 }
             }

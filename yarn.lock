@@ -950,6 +950,13 @@
   dependencies:
     "@ersolucoesweb/vuegic" "^3.2.0"
 
+"@ersolucoesweb/vuegic@^3.4.0":
+  version "3.4.0"
+  resolved "https://registry.yarnpkg.com/@ersolucoesweb/vuegic/-/vuegic-3.4.0.tgz#4ece4f0b549d8d2a3f59561848ade6c90be19e9c"
+  integrity sha512-CmI+tabN32M0ejC9bsshrBUUrfEp3nq8/wC8uCvd0JI6bg8NqRH5Rsw/TX0+TybGOgDgTDE9fjUaR2zzyPj/pA==
+  dependencies:
+    "@ersolucoesweb/vuegic" "^3.3.0"
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npmjs.org/@mrmlnc/readdir-enhanced/-/readdir-enhanced-2.2.1.tgz"

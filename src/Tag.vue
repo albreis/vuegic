@@ -5,7 +5,7 @@
                 <CustomTag v-if="t && isValidTag(getTag(t), t)" :key="k" :tag="parse(t)" />
                 <template v-else-if="typeof t == 'string'">{{parse(t, {tag})}}</template>
                 <template v-else-if="typeof t == 'function'">                    
-                    <template v-if="typeof (r=t()) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
+                    <template v-if="typeof (r=t(this)) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
                     <template v-else-if="typeof r == 'string'">{{parse(r)}}</template>
                     <template v-else-if="typeof r == 'object'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
                 </template>
@@ -17,7 +17,7 @@
                 <CustomTag v-if="t && isValidTag(k, t)" :key="k" :tag="{[k]: parse(t)}" />
                 <template v-else-if="typeof t == 'string'">{{parse(t)}}</template>
                 <template v-else-if="typeof t == 'function'">
-                    <template v-if="typeof (r=t()) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
+                    <template v-if="typeof (r=t(this)) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
                     <template v-else-if="typeof r == 'string'">{{parse(r)}}</template>
                     <template v-else-if="typeof r == 'object'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
                 </template>
@@ -26,7 +26,7 @@
         </template>
         <template v-else-if="typeof tag[tagName] == 'string'">{{parse(tag[tagName])}}</template>
         <template v-else-if="typeof tag[tagName] == 'function'">
-            <template v-if="typeof (r=tag[tagName]()) == 'function'"><CustomTag :key="k" :tag="{[tag[tagName].name]: parse(r)}" /></template>
+            <template v-if="typeof (r=tag[tagName](this)) == 'function'"><CustomTag :key="k" :tag="{[tag[tagName].name]: parse(r)}" /></template>
             <template v-else-if="typeof r == 'string'">{{parse(r)}}</template>
             <template v-else-if="typeof r == 'object'"><CustomTag :key="k" :tag="{[getTag(r)]: parse(r)}" /></template>
         </template>
