@@ -3,7 +3,7 @@
 </template>
 <script>
 /* eslint-disable */
-import Vuegic from '@ersolucoesweb/vuegic'
+import Vuegic from '../src/Vuegic'
 import axios from 'axios'
 export default {
     components: {
@@ -18,7 +18,7 @@ export default {
                     },
                     thead: {
                         tr: [
-                            {td: [function small(){ return 'asdasda'}]},
+                            {td: [function small(){ return {b: 'asdasda'}}]},
                             {td: 'Sigla'}
                         ]
                     },

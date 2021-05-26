@@ -222,7 +222,7 @@
               _vm.checkIsArray(_vm.tag[_vm.tagName])
                 ? [
                     _vm._l(_vm.getTags(_vm.tag[_vm.tagName]), function(t, k) {
-                      var _obj, _obj$1;
+                      var _obj, _obj$1, _obj$2;
                       return [
                         t && _vm.isValidTag(_vm.getTag(t), t)
                           ? _c("CustomTag", {
@@ -240,24 +240,32 @@
                                       attrs: {
                                         tag:
                                           ((_obj = {}),
-                                          (_obj[t.name] = _vm.parse(_vm.r)),
+                                          (_obj[_vm.r.name] = _vm.parse(_vm.r)),
                                           _obj)
                                       }
                                     })
                                   ]
                                 : typeof _vm.r == "string"
-                                ? [_vm._v(_vm._s(_vm.parse(_vm.r)))]
-                                : typeof _vm.r == "object"
                                 ? [
                                     _c("CustomTag", {
                                       key: k,
                                       attrs: {
                                         tag:
                                           ((_obj$1 = {}),
-                                          (_obj$1[_vm.getTag(_vm.r)] = _vm.parse(
-                                            _vm.r
-                                          )),
+                                          (_obj$1[t.name] = _vm.parse(_vm.r)),
                                           _obj$1)
+                                      }
+                                    })
+                                  ]
+                                : typeof _vm.r == "object"
+                                ? [
+                                    _c("CustomTag", {
+                                      key: k,
+                                      attrs: {
+                                        tag:
+                                          ((_obj$2 = {}),
+                                          (_obj$2[t.name] = _vm.parse(_vm.r)),
+                                          _obj$2)
                                       }
                                     })
                                   ]
@@ -276,7 +284,7 @@
                 : typeof _vm.tag[_vm.tagName] == "object"
                 ? [
                     _vm._l(_vm.getTags(_vm.tag[_vm.tagName]), function(t, k) {
-                      var _obj, _obj$1, _obj$2;
+                      var _obj, _obj$1, _obj$2, _obj$3;
                       return [
                         t && _vm.isValidTag(k, t)
                           ? _c("CustomTag", {
@@ -296,24 +304,32 @@
                                       attrs: {
                                         tag:
                                           ((_obj$1 = {}),
-                                          (_obj$1[t.name] = _vm.parse(_vm.r)),
+                                          (_obj$1[_vm.r.name] = _vm.parse(_vm.r)),
                                           _obj$1)
                                       }
                                     })
                                   ]
                                 : typeof _vm.r == "string"
-                                ? [_vm._v(_vm._s(_vm.parse(_vm.r)))]
-                                : typeof _vm.r == "object"
                                 ? [
                                     _c("CustomTag", {
                                       key: k,
                                       attrs: {
                                         tag:
                                           ((_obj$2 = {}),
-                                          (_obj$2[_vm.getTag(_vm.r)] = _vm.parse(
-                                            _vm.r
-                                          )),
+                                          (_obj$2[t.name] = _vm.parse(_vm.r)),
                                           _obj$2)
+                                      }
+                                    })
+                                  ]
+                                : typeof _vm.r == "object"
+                                ? [
+                                    _c("CustomTag", {
+                                      key: k,
+                                      attrs: {
+                                        tag:
+                                          ((_obj$3 = {}),
+                                          (_obj$3[t.name] = _vm.parse(_vm.r)),
+                                          _obj$3)
                                       }
                                     })
                                   ]
@@ -375,7 +391,7 @@
       /* style */
       var __vue_inject_styles__ = function (inject) {
         if (!inject) { return }
-        inject("data-v-620c9d51_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
+        inject("data-v-68ee5007_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
 
       };
       /* scoped */
