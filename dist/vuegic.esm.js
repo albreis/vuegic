@@ -232,10 +232,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj = {}),
-                                      (_obj[_vm.r.name] = _vm.parse(_vm.r)),
-                                      _obj)
+                                    tag: _vm.r.name
+                                      ? ((_obj = {}),
+                                        (_obj[_vm.r.name] = _vm.parse(_vm.r)),
+                                        _obj)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -244,10 +245,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj$1 = {}),
-                                      (_obj$1[t.name] = _vm.parse(_vm.r)),
-                                      _obj$1)
+                                    tag: t.name
+                                      ? ((_obj$1 = {}),
+                                        (_obj$1[t.name] = _vm.parse(_vm.r)),
+                                        _obj$1)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -256,10 +258,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj$2 = {}),
-                                      (_obj$2[t.name] = _vm.parse(_vm.r)),
-                                      _obj$2)
+                                    tag: t.name
+                                      ? ((_obj$2 = {}),
+                                        (_obj$2[t.name] = _vm.parse(_vm.r)),
+                                        _obj$2)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -296,10 +299,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj$1 = {}),
-                                      (_obj$1[_vm.r.name] = _vm.parse(_vm.r)),
-                                      _obj$1)
+                                    tag: _vm.r.name
+                                      ? ((_obj$1 = {}),
+                                        (_obj$1[_vm.r.name] = _vm.parse(_vm.r)),
+                                        _obj$1)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -308,10 +312,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj$2 = {}),
-                                      (_obj$2[t.name] = _vm.parse(_vm.r)),
-                                      _obj$2)
+                                    tag: t.name
+                                      ? ((_obj$2 = {}),
+                                        (_obj$2[t.name] = _vm.parse(_vm.r)),
+                                        _obj$2)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -320,10 +325,11 @@ var __vue_render__ = function() {
                                 _c("CustomTag", {
                                   key: k,
                                   attrs: {
-                                    tag:
-                                      ((_obj$3 = {}),
-                                      (_obj$3[t.name] = _vm.parse(_vm.r)),
-                                      _obj$3)
+                                    tag: t.name
+                                      ? ((_obj$3 = {}),
+                                        (_obj$3[t.name] = _vm.parse(_vm.r)),
+                                        _obj$3)
+                                      : _vm.parse(_vm.r)
                                   }
                                 })
                               ]
@@ -385,7 +391,7 @@ __vue_render__._withStripped = true;
   /* style */
   var __vue_inject_styles__ = function (inject) {
     if (!inject) { return }
-    inject("data-v-68ee5007_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
+    inject("data-v-d8e415ba_0", { source: "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", map: {"version":3,"sources":[],"names":[],"mappings":"","file":"Tag.vue"}, media: undefined });
 
   };
   /* scoped */
