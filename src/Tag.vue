@@ -6,7 +6,7 @@
                 <template v-else-if="typeof t == 'string'">{{parse(t, {tag})}}</template>
                 <template v-else-if="typeof t == 'function'">                    
                     <template v-if="typeof (r=t()) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
-                    <template v-else-if="typeof r == 'string'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
+                    <template v-else-if="typeof r == 'string'">{{parse(r)}}</template>
                     <template v-else-if="typeof r == 'object'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
                 </template>
                 <template v-else>{{parse(t[getTag(t)], {tag})}}</template>
@@ -18,7 +18,7 @@
                 <template v-else-if="typeof t == 'string'">{{parse(t)}}</template>
                 <template v-else-if="typeof t == 'function'">
                     <template v-if="typeof (r=t()) == 'function'"><CustomTag :key="k" :tag="r.name ? {[r.name]: parse(r)} : parse(r)" /></template>
-                    <template v-else-if="typeof r == 'string'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
+                    <template v-else-if="typeof r == 'string'">{{parse(r)}}</template>
                     <template v-else-if="typeof r == 'object'"><CustomTag :key="k" :tag="t.name ? {[t.name]: parse(r)} : parse(r)" /></template>
                 </template>
                 <template v-else>{{parse(t[getTag(t)], {tag})}}</template>

@@ -3,8 +3,8 @@
 </template>
 <script>
 /* eslint-disable */
-// import Vuegic from '@ersolucoesweb/vuegic'
-import Vuegic from '../src/Vuegic'
+import Vuegic from '@ersolucoesweb/vuegic'
+// import Vuegic from '../src/Vuegic'
 import axios from 'axios'
 export default {
     components: {
@@ -19,7 +19,7 @@ export default {
                     },
                     thead: {
                         tr: [
-                            {td: [{b: 'asdasda'}]},
+                            {td: {p: () => {return {i: [{b: () => 'asdasda'}]}}}},
                             {td: 'Sigla'}
                         ]
                     },
